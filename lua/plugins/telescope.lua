@@ -48,7 +48,8 @@ return {
         find_files = {
         theme = "dropdown",
         previewer = false,
-        find_command = { "fd", "-H" , "-I"},  -- "-H" search hidden files, "-I" do not respect to gitignore
+        -- find_command = { "fd", "-H" , "-I"},  -- "-H" search hidden files, "-I" do not respect to gitignore
+        find_command = { "fd" },  -- "-H" search hidden files, "-I" do not respect to gitignore
         -- find_command = { "find", "-type", "f" },
         },
         git_files = {
