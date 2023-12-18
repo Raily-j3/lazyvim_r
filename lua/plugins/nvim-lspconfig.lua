@@ -50,6 +50,8 @@ return {
     -- keys[#keys + 1] = { "K", "5<C-y>" }
     -- disable a keymap
     keys[#keys + 1] = { "K", false }
+    keys[#keys + 1] = { "gr", false }
+    keys[#keys + 1] = { "gd", false }
     -- add a keymap
     -- keys[#keys + 1] = { "H", "<cmd>echo 'hello'<cr>" }
   end,

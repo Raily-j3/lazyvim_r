@@ -34,6 +34,9 @@ map("n", "<leader>d", "<C-W>c", { desc = "Delete window", remap = true })
 map("n", "<leader>w", function() require("mini.bufremove").delete(0, false) end, { desc = "Delete Buffer", nowait = true })
 map("n", "<leader>W", function() require("mini.bufremove").delete(0, true) end, { desc = "Delete Buffer(force)", nowait = true })
 
+map('n', '<c-a>', 'ggVG')
+map({ 'n', 'x' }, '<leader>p', '"0p')
+
 -- move
 map("n", "<leader>[", "[{", { desc = "" })
 map("n", "<leader>]", "]}", { desc = "" })
@@ -61,4 +64,8 @@ else
   map("n", "<C-l>", "<cmd>bnext<cr>", { desc = "Next buffer" })
 end
 
-map("n", "gh", vim.lsp.buf.hover, { desc = "" })
+-- map("n", "gh", vim.lsp.buf.hover, { desc = "" })
+map("n", "gh", "<cmd>Lspsaga hover_doc<CR>" , { desc = "" })
+map("n", "gr", "<cmd>Lspsaga finder<CR>" , { desc = "" })
+
+-- map("n", "<leader>gg", function() Util.terminal({ "lazygit" }, {esc_esc = false, ctrl_hjkl = false}) end, { desc = "Lazygit (cwd)" })
