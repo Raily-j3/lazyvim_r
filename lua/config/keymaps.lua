@@ -65,7 +65,4 @@ else
 end
 
 -- map("n", "gh", vim.lsp.buf.hover, { desc = "" })
-map("n", "gh", "<cmd>Lspsaga hover_doc<CR>" , { desc = "" })
-map("n", "gr", "<cmd>Lspsaga finder<CR>" , { desc = "" })
-
 -- map("n", "<leader>gg", function() Util.terminal({ "lazygit" }, {esc_esc = false, ctrl_hjkl = false}) end, { desc = "Lazygit (cwd)" })
