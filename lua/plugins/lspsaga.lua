@@ -24,6 +24,10 @@ return {
       --     quit = "<esc>",
       --   },
       -- },
+      floaterm = {
+        height = 0.9,
+        width = 0.9,
+      },
     })
 
     -- keymap.set('n', '[d', '<cmd>Lspsaga diagnostic_jump_prev<cr>')

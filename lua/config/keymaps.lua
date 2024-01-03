@@ -76,3 +76,4 @@ map("t", "<C-l>", "clear<cr>")
 
 -- map("n", "gh", vim.lsp.buf.hover, { desc = "" })
 -- map("n", "<leader>gg", function() Util.terminal({ "lazygit" }, {esc_esc = false, ctrl_hjkl = false}) end, { desc = "Lazygit (cwd)" })
+map({ "n", "t" }, "<A-d>", "<cmd>Lspsaga term_toggle<cr>")
