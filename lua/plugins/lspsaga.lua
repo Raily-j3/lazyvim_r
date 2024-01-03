@@ -19,6 +19,11 @@ return {
           toggle_or_open = "<cr>",
         },
       },
+      -- rename = {
+      --   keys = {
+      --     quit = "<esc>",
+      --   },
+      -- },
     })
 
     -- keymap.set('n', '[d', '<cmd>Lspsaga diagnostic_jump_prev<cr>')
